@@ -1,4 +1,4 @@
-#Guide to using modman
+#summary Tutorial for getting started with modman
 
 = Introduction =
 
