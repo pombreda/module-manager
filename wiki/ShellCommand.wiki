@@ -1,4 +1,4 @@
-#Running shell commands on update
+#summary Running shell commands on update
 
 = Shell Command =
 
