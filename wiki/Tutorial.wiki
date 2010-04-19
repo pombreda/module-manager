@@ -10,7 +10,7 @@ Modman allows you to structure your code repository in a very simple way and hav
 
 = How to Use =
 
-Most likely you can start using modman with an existing project by simply adding one file, the *modman* file. This is a simple text file (*nix newlines only) which tells the script how to map your repository files into the application root. It should be placed in the root of the project. The syntax rules are simple:
+Most likely you can start using modman with an existing project by simply adding one file, the *modman* file. This is a simple text file (`*`nix newlines only) which tells the script how to map your repository files into the application root. It should be placed in the root of the project. The syntax rules are simple:
 
   * Blank lines are ignored
   * Lines beginning with # are ignored
@@ -89,3 +89,5 @@ design             app/design/frontend/my/default
 }}}
 
 In cases such as this it is actually important that the `My_Module` module is not checked out first since it contains files which are mapped to directories which are within the above module. Imports are the best way to guarantee link creation order.
+
+See [Standalone] and ShellCommand for more features.
