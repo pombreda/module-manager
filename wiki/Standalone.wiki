@@ -1,6 +1,6 @@
 #summary Running modman without subversion
 
-Modman can be run without subversion as of 1.0.3 by using the _*deploy*_ command.
+Modman can be run without a VCS as of 1.0.3 by using the _*deploy*_ command.
 
 The modman file format is no different. The only difference is that rather than using modman checkout to create your repository, you copy the file to the same location manually. That location is relative to the project root: *.modman/<module name>*
 
