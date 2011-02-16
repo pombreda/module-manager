@@ -16,7 +16,7 @@ Most likely you can start using modman with an existing project by simply adding
   * Lines beginning with # are ignored
   * All other lines should contain two white-space separated strings
 
-There are two types of definitions, the first is a path mapping. The first path is the repository path (relative to the location of the modman file) and the second is the path it should map to when deployed.
+There are three types of directives, the first is a path mapping. The first path is the repository path (relative to the location of the modman file) and the second is the path it should map to when deployed.
 
 === Example ===
 
@@ -63,7 +63,7 @@ Modman allows you to use more than one module in the same application root, so y
 
 === Multiple Modules ===
 
-Using multiple separate modules will always result in multiple working copies. Simply run `modman <module> checkout <url>` for each module where `<module>` is a unique name of your choosing. The working copy will be located at `[ROOT]/.modman/<module>` and you can then update, commit, etc.. by specifying the same module name to modman. E.g., to update the My_Module module to the latest version:
+Using multiple separate modules will always result in multiple working copies. Simply run `modman <module> <checkout|clone> <url>` for each module where `<module>` is a unique name of your choosing. The working copy will be located at `[ROOT]/.modman/<module>` and you can then update, commit, etc.. by specifying the same module name to modman. E.g., to update the My_Module module to the latest version:
 
 {{{
 > modman my update
@@ -77,7 +77,7 @@ If you have lots of modules you can simply run `update-all` to update each one a
 
 === Nested Modules ===
 
-Modman also supports nested modules. Using nested modules allows you to have fewer working copies checked out if the source for your modules is all contained within one repository. You can optionally use svn:externals to checkout an external module into your working copy. Then, in your modman file specify the root of the nested module using `@import` like so:
+Modman also supports nested modules. Using nested modules allows you to have fewer working copies checked out if the source for your modules is all contained within one repository. You can optionally use svn:externals or git submodules to include an external module in your working copy. Then, in your modman file specify the root of the nested module using `@import` like so:
 
 {{{
 # My template
