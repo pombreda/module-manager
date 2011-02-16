@@ -6,19 +6,8 @@ Using the `deploy` command bypasses any svn-specific functionality. As such, mod
 
 == Git ==
 
-Here is a suggestion for using modman with git. This example assumes you have a project with a proper modman file located at `<repository>`:
-
-{{{
-> modman init
-> git clone <repository> .modman/mymodule
-> cat > .modman/mymodule/.git/hooks/post-merge
-#!/bin/bash
-modman deploy
-> chmod +x .modman/mymodule/.git/hooks/post-merge
-}}}
-
-Now, when you run `git pull` on this repository the `modman deploy` command will be run after a successful merge of any upstream changes.
+Since version 1.1.0, modman supports git natively using pull and submodule update --init commands internally.
 
 == Others ==
 
-Perhaps other SCMs can just as easily be integrated, let me know if you know how!
+Other SCMs can likely be integrated easily but only git and subversion are currently supported natively (with modman's update and update-all commands).
