@@ -1,4 +1,4 @@
-#summary Running modman without subversion
+#summary Running modman without a VCS
 
 Modman can be run without a VCS as of 1.0.3 by using the _*deploy*_ command.
 
