@@ -1,0 +1,6 @@
+#summary Enable bash completion for modman commands
+#labels Featured
+
+Special thanks to Franklin Strube, who posted a guide to enabling bash completion for modman!
+
+http://www.franklinstrube.com/blog/magento-module-manager-bash-completion
