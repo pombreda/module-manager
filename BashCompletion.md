@@ -1,0 +1,3 @@
+A bash\_completion file is included in the repository. Copy it to /etc/bash\_completion.d/modman or append it to ~/.bash\_completion to enable it.
+
+Special thanks to Franklin Strube, who originally posted a [guide to enable bash completion for modman](http://www.franklinstrube.com/blog/magento-module-manager-bash-completion)! However, it is recommended to use the version that is now included in the repository.
